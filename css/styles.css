@@ -40,14 +40,14 @@ img {
 
 .visually-hidden {
    position: absolute;
-   overflow: hidden;
-   clip: rect(0 0 0 0);
-   clip-path: inset(50%);
    width: 1px;
    height: 1px;
    margin: -1px;
-   padding: 0;
    border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   overflow: hidden;
 }
 
 /** =================== HEADER =================== */
@@ -110,10 +110,12 @@ header {
 .header-menu-list {
    display: flex;
    gap: 40px;
-   padding: 24px 0;
+   /* padding: 24px 0; */
 }
 
-/*? .header-menu-item {} */
+.header-menu-item {
+   padding: 24px 0;
+}
 
 .header-menu-link {
    color: #2E2F42;
@@ -377,6 +379,7 @@ header {
 .container-main-portfolio-text {
    padding: 32px 16px;
    border: 1px solid #e7e9fc;
+   border-top: none;
 }
 
 .main-portfolio-subtitle {
