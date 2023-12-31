@@ -26,18 +26,6 @@ ul {
    list-style: none;
 }
 
-.visually-hidden {
-   position: absolute;
-   width: 1px;
-   height: 1px;
-   margin: -1px;
-   border: 0;
-   padding: 0;
-   white-space: nowrap;
-   clip-path: inset(100%);
-   overflow: hidden;
-}
-
 .container {
    width: 100%;
    max-width: 1158px;
@@ -50,6 +38,21 @@ img {
    display: block;
 }
 
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(50%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+
+
 
 /** =================== HEADER =================== */
 
@@ -61,8 +64,7 @@ img {
    align-items: center;
    display: flex;
    gap: 332px;
-   /* padding: 0 15px; */
-   padding: 24px 0;
+   padding: 0 15px;
 }
 
 header {
@@ -116,7 +118,7 @@ header {
 }
 
 .header-menu-item {
-   /* padding: 24px 0; */
+   padding: 24px 0;
 }
 
 .header-menu-link {
@@ -143,7 +145,7 @@ header {
    display: flex;
    gap: 40px;
    align-items: center;
-   /* padding: 24px 0; */
+   padding: 24px 0;
 }
 
 .header-address-item {}
