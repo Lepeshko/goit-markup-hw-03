@@ -1,3 +1,10 @@
+* {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   box-sizing: border-box;
+}
+
 body {
    font-family: 'Roboto', sans-serif;
    color: #434455;
@@ -12,13 +19,31 @@ ul {
    list-style: none;
 }
 
+.container {
+   width: 100%;
+   max-width: 1158px;
+   padding-left: 156px;
+   padding-right: 156px;
+   margin: 0 auto;
+   line: 2px solid red;
+}
 
 /** =================== HEADER =================== */
 
 /*  */
-.header {}
 
-.header-navigation {}
+.container-header {
+   padding-top: 24px;
+   padding-bottom: 24px;
+}
+
+header {
+   border-bottom: 1px solid #E7E9FC;
+}
+
+/*? .header {} */
+
+/*? .header-navigation {} */
 
 .header-logo {
    color: #4D5AE5;
@@ -104,6 +129,12 @@ ul {
 
 /*? .main {} */
 
+
+.container-hero {
+   padding-top: 188px;
+   padding-bottom: 292px;
+}
+
 .main-hero {
    background: #2E2F42;
 }
@@ -116,6 +147,10 @@ ul {
    font-weight: 700;
    line-height: 1.07;
    letter-spacing: 0.02em;
+   max-width: 496px;
+   margin: 0 auto;
+   margin-bottom: 48px;
+
 }
 
 .main-hero-button {
@@ -129,6 +164,8 @@ ul {
    letter-spacing: 0.04em;
    cursor: pointer;
    background-color: #4D5AE5;
+   max-width: 169px;
+   margin: 0 auto;
 }
 
 .main-hero-button:hover {
@@ -143,6 +180,11 @@ ul {
 /** ------------------ SKILS ------------------ */
 
 /*? .main-skils {} */
+
+.container-main-skils {
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
 
 .main-skils-title {
    color: #2E2F42;
@@ -164,6 +206,7 @@ ul {
    font-weight: 500;
    line-height: 1.2;
    letter-spacing: 0.02em;
+   margin-bottom: 8px;
 }
 
 .main-skils-item-text {
@@ -175,6 +218,11 @@ ul {
 }
 
 /** ------------------ OUR TEAM ------------------ */
+
+.container-main-team {
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
 
 .main-team {
    background-color: #F4F4FD;
@@ -222,6 +270,10 @@ ul {
 
 /** ------------------ PORTFOLIO ------------------ */
 
+.container-main-portfolio {
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
 
 .main-portfolio {
    background-color: #F4F4FD;
@@ -266,6 +318,11 @@ ul {
 
 /** =================== FOOTER =================== */
 
+.container-footer {
+   padding-top: 101.5px;
+   padding-bottom: 100px;
+}
+
 .footer {
    background: #2E2F42;
 }
@@ -302,4 +359,6 @@ ul {
    font-weight: 400;
    line-height: 1.5;
    letter-spacing: 0.02em;
+   margin-top: 17.5px;
+   max-width: 264px;
 }
