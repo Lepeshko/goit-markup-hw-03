@@ -5,6 +5,13 @@
    box-sizing: border-box;
 }
 
+/*! h1 h2 h3 h4 h5 h6 p ul {
+      margin: 0;
+         padding: 0;
+         list-style: none;
+         box-sizing: border-box;
+} */
+
 body {
    font-family: 'Roboto', sans-serif;
    color: #434455;
@@ -21,20 +28,27 @@ ul {
 
 .container {
    width: 100%;
-   max-width: 1158px;
+   max-width: 1440px;
    padding-left: 156px;
    padding-right: 156px;
    margin: 0 auto;
    line: 2px solid red;
 }
 
+img {
+   display: block;
+}
+
 /** =================== HEADER =================== */
 
-/*  */
 
 .container-header {
    padding-top: 24px;
    padding-bottom: 24px;
+   display: flex;
+   align-items: center;
+   display: flex;
+   gap: 332px;
 }
 
 header {
@@ -43,7 +57,12 @@ header {
 
 /*? .header {} */
 
-/*? .header-navigation {} */
+.header-navigation {
+   display: flex;
+   flex-grow: 1;
+   justify-content: space-between;
+   align-items: center;
+}
 
 .header-logo {
    color: #4D5AE5;
@@ -75,7 +94,10 @@ header {
    text-transform: uppercase;
 }
 
-.header-menu-list {}
+.header-menu-list {
+   display: flex;
+   gap: 40px;
+}
 
 .header-menu-item {}
 
@@ -95,12 +117,15 @@ header {
    color: #404bbf;
 }
 
-/*  */
 .header-address {
    font-style: normal;
 }
 
-.header-address-list {}
+.header-address-list {
+   display: flex;
+   gap: 40px;
+   align-items: center;
+}
 
 .header-address-item {}
 
@@ -131,6 +156,7 @@ header {
 
 
 .container-hero {
+   height: 600px;
    padding-top: 188px;
    padding-bottom: 292px;
 }
@@ -153,6 +179,10 @@ header {
 
 }
 
+.container-hero-btn {
+   display: flex;
+}
+
 .main-hero-button {
    color: #FFF;
    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -164,7 +194,10 @@ header {
    letter-spacing: 0.04em;
    cursor: pointer;
    background-color: #4D5AE5;
-   max-width: 169px;
+   border-radius: 4px;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+   border: 0;
+   padding: 16px 32px;
    margin: 0 auto;
 }
 
@@ -194,9 +227,14 @@ header {
    letter-spacing: 0.02em;
 }
 
-/*? .main-skils-list {} */
+.main-skils-list {
+   display: flex;
+   gap: 24px;
+}
 
-/*? .main-skils-item {} */
+.main-skils-item {
+   width: ((100% - 24px * 3) / 4);
+}
 
 .main-skils-subtitle {
    color: #2E2F42;
@@ -236,12 +274,21 @@ header {
    line-height: 1.11;
    letter-spacing: 0.02em;
    text-transform: capitalize;
+   margin-bottom: 72px;
 }
 
-/*? .main-team-list {} */
+.main-team-list {
+   display: flex;
+   gap: 24px;
+}
 
 .main-team-item {
    background-color: #FFFFFF;
+   border-radius: 0px 0px 4px 4px;
+   background: #FFF;
+   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+   /* outline: 1px solid green; */
+   width: ((100% - 24 * 3) / 4);
 }
 
 .main-team-list-img {
@@ -256,6 +303,7 @@ header {
    font-weight: 500;
    line-height: 1.2;
    letter-spacing: 0.02em;
+   margin-top: 32px;
 }
 
 .main-team-text {
@@ -265,8 +313,9 @@ header {
    font-weight: 400;
    line-height: 1.5;
    letter-spacing: 0.02em;
+   margin-top: 8px;
+   margin-bottom: 32px;
 }
-
 
 /** ------------------ PORTFOLIO ------------------ */
 
@@ -276,7 +325,7 @@ header {
 }
 
 .main-portfolio {
-   background-color: #F4F4FD;
+   background: #FFF;
 }
 
 .main-portfolio-title {
@@ -287,15 +336,24 @@ header {
    line-height: 1.11;
    letter-spacing: 0.02em;
    text-transform: capitalize;
+   margin-bottom: 72px;
 }
 
 .main-portfolio-list {
    background-color: #FFFFFF;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 38px 24px;
 }
 
-/*? .main-portfolio-item {} */
+.main-portfolio-item {
+   /* border: 1px solid #E7E9FC; */
+   width: ((100% - 24 * 2) / 3);
+}
 
-/*? .main-portfolio-list-img {} */
+.main-portfolio-list-img {
+   margin: 0 auto;
+}
 
 .main-portfolio-subtitle {
    color: #2E2F42;
@@ -303,6 +361,8 @@ header {
    font-weight: 500;
    line-height: 1.2;
    letter-spacing: 0.02em;
+   margin-top: 32px;
+   margin-left: 16px;
 }
 
 .main-portfolio-text {
@@ -311,6 +371,9 @@ header {
    font-weight: 400;
    line-height: 1.5;
    letter-spacing: 0.02em;
+   margin-top: 8px;
+   margin-left: 16px;
+   margin-bottom: 32px;
 }
 
 
