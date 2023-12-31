@@ -38,6 +38,18 @@ img {
    display: block;
 }
 
+.visually-hidden {
+   position: absolute;
+   overflow: hidden;
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   padding: 0;
+   border: 0;
+}
+
 /** =================== HEADER =================== */
 
 
@@ -97,11 +109,10 @@ header {
 .header-menu-list {
    display: flex;
    gap: 40px;
-}
-
-.header-menu-item {
    padding: 24px 0;
 }
+
+/*? .header-menu-item {} */
 
 .header-menu-link {
    color: #2E2F42;
@@ -215,22 +226,13 @@ header {
 
 /** ------------------ SKILS ------------------ */
 
-/*? .main-skils {} */
-
-.visually-hidden {
-   position: absolute;
-   overflow: hidden;
-   clip: rect(0 0 0 0);
-   clip-path: inset(50%);
-   width: 1px;
-   height: 1px;
-   margin: -1px;
-   padding: 0;
-   border: 0;
+.main-skils {
+   padding: 120px 0;
 }
 
+
 .container-main-skils {
-   padding: 120px 0;
+   /* padding: 120px 0; */
 }
 
 .main-skils-title {
@@ -277,7 +279,7 @@ header {
 
 .main-team {
    background-color: #F4F4FD;
-   padding-bottom: 120px 0;
+   padding: 120px 0;
 }
 
 .main-team-title {
@@ -310,7 +312,7 @@ header {
 }
 
 .container-main-team-text {
-   padding: 32px;
+   padding: 32px 0;
 }
 
 .main-team-subtitle {
@@ -321,6 +323,7 @@ header {
    font-weight: 500;
    line-height: 1.2;
    letter-spacing: 0.02em;
+   margin-bottom: 8px;
 }
 
 .main-team-text {
@@ -330,18 +333,16 @@ header {
    font-weight: 400;
    line-height: 1.5;
    letter-spacing: 0.02em;
-   margin-top: 8px;
 }
 
 /** ------------------ PORTFOLIO ------------------ */
 
-.container-main-portfolio {
-   padding-top: 120px;
-   padding-bottom: 120px;
-}
+/*? .container-main-portfolio {} */
 
 .main-portfolio {
    background: #FFF;
+   padding-top: 120px;
+   padding-bottom: 120px;
 }
 
 .main-portfolio-title {
@@ -359,11 +360,11 @@ header {
    background-color: #FFFFFF;
    display: flex;
    flex-wrap: wrap;
-   gap: 38px 24px;
+   gap: 48px 24px;
 }
 
 .main-portfolio-item {
-   /* border: 1px solid #E7E9FC; */
+   border: 1px solid #e7e9fc;
    width: calc((100% - 24 * 2) / 3);
 }
 
@@ -381,6 +382,7 @@ header {
    font-weight: 500;
    line-height: 1.2;
    letter-spacing: 0.02em;
+   margin-bottom: 8px;
 }
 
 .main-portfolio-text {
@@ -389,7 +391,6 @@ header {
    font-weight: 400;
    line-height: 1.5;
    letter-spacing: 0.02em;
-   margin-top: 8px;
 }
 
 
@@ -416,6 +417,7 @@ header {
    letter-spacing: 0.03em;
    text-transform: uppercase;
    display: inline-block;
+   margin-bottom: 16px;
 }
 
 
@@ -429,7 +431,6 @@ header {
    line-height: 1.17;
    letter-spacing: 0.03em;
    text-transform: uppercase;
-   margin-bottom: 16px;
 }
 
 
