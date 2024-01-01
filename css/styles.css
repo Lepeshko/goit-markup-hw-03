@@ -182,9 +182,7 @@ header {
    padding: 188px 0;
 }
 
-.container-hero {
-   height: 600px;
-}
+/*? .container-hero {} */
 
 
 .main-hero-heading {
@@ -283,9 +281,7 @@ header {
 
 /** ------------------ OUR TEAM ------------------ */
 
-.container-main-team {
-   padding-top: 120px;
-}
+/*? .container-main-team {padding-top: 120px;} */
 
 .main-team {
    background-color: #F4F4FD;
